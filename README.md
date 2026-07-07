@@ -87,13 +87,3 @@ graph TD
 * **`version`** (Default: `"v0.1.0"`): Defines the GitHub Release tag and archive name. 
   * **Locally:** Defaults to `v0.1.0` unless overridden.
   * **In CI:** Overridden by GitHub Actions using the git tag that triggered the workflow (e.g., `just publish version=${{ github.ref_name }}`).
-
-## CI/CD Integration (Codeberg → GitHub Mirror)
-
-Because this repository is mirrored from Codeberg to GitHub:
-
-1. You push a new git tag to Codeberg (e.g., `git tag v0.1.0 && git push origin v0.1.0`).
-2. Codeberg mirrors the tag to GitHub.
-3. The GitHub Actions workflow (`.github/workflows/release.yml`) triggers on the new tag.
-4. The workflow installs `just` and `uv`, then executes `just publish version=v0.1.0`.
-5. The binary is built on the GitHub runner and published directly to your GitHub Releases page.
