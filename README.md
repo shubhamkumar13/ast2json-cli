@@ -1,7 +1,7 @@
 
 [![Hippocratic License HL3-FULL](https://img.shields.io/static/v1?label=Hippocratic%20License&message=HL3-FULL&labelColor=5e2751&color=bc8c3d)](https://firstdonoharm.dev/version/3/0/full.html)
 
-Here is complete documentation for your `justfile`. You can save this as `README.md`, `JUSTFILE.md`, or `docs/build-process.md` in your repository.
+** DISCLAIMER : Temporary Readme which is AI-generated, I'll get back to this, I promise **
 
 ---
 
