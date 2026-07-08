@@ -15,7 +15,7 @@ check:
 # Build the binary
 build-cli:
     uv python install 3.12
-    uv run --link-mode=copy --python 3.12  --with typer --with ast2json --with pyinstaller pyinstaller --noconfirm main.py
+    uv run --link-mode=copy --python 3.12  --with typer --with ast2json --with pyinstaller pyinstaller --noconfirm --name "ast2json" main.py
 
 # Create archive for release
 archive: build-cli
