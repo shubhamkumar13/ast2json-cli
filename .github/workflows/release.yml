@@ -19,11 +19,12 @@ jobs:
 
       # 1. Install 'just' (GitHub runners don't have it)
       - name: Install Just
-        run: sudo apt-get update && sudo apt-get install -y just
-
+        run: sudo apt-get update && sudo apt-get install -y just gh
       # 2. Install 'uv' (Using the official Astral action)
       - name: Install uv
         uses: astral-sh/setup-uv@v4
+        with:
+          version: "0.11.14"
 
       # 3. Run the justfile, passing the git tag as the version
       - name: Build and Publish
