@@ -31,4 +31,4 @@ jobs:
         env:
           # GITHUB_TOKEN is automatically provided by GitHub Actions
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: just publish version=${{ github.ref_name }}
+        run: just publish ${{ github.ref_name }}
