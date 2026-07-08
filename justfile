@@ -20,7 +20,7 @@ build-cli:
 # Create archive for release
 archive: build-cli
     @echo "Creating release archive..."
-    tar -czf ast2json-cli.tar.gz -C dist main/
+    tar -czf ast2json-cli.tar.gz -C dist ast2json/
 
 # Publish to GitHub Releases
 publish *version : check archive
