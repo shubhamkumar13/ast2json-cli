@@ -11,4 +11,4 @@ wheels/
 .venv
 
 # Place where I generate packages
-
+*.tar.gz
